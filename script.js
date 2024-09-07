@@ -1,0 +1,1 @@
+file://%20script.jsdocument.addeventlistener('domcontentloaded',%20function()%20{%20%20%20%20const%20menutoggle%20=%20document.queryselector('.menu-toggle');%20%20%20%20const%20nav%20=%20document.queryselector('nav');%20%20%20%20menutoggle.addeventlistener('click',%20function()%20{%20%20%20%20%20%20%20%20nav.classlist.toggle('active');%20%20%20%20});});/

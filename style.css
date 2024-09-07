@@ -1,0 +1,391 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #f0fff0;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(145deg, #e0f7e7, #b4e6c5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    background: #7ed957;
+    color: #fff;
+    box-shadow: 0 0 10px #7ed957, 0 0 20px #7ed957, 0 0 30px #7ed957;
+}
+
+/* Main Section Styles */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* New Section Styles */
+.why-solar, .uses-solar, .contact, .feedback {
+    background: #f7fff7;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.why-solar:hover, .uses-solar:hover, .contact:hover, .feedback:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #7ed957, 0 0 25px #7ed957, 0 0 35px #7ed957;
+}
+
+.why-solar h2, .uses-solar h2, .contact h1, .feedback h1 {
+    font-size: 2.5em;
+    color: #2a9134;
+    text-shadow: 2px 2px 5px #7ed957, 0 0 10px #7ed957;
+    margin-bottom: 20px;
+}
+
+.why-solar p, .uses-solar p, .contact p, .feedback p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.why-solar-images, .uses-solar-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.solar-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solar-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact and Feedback Form Styles */
+.contact form, .feedback form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea,
+.feedback input[type="text"],
+.feedback textarea {
+    padding: 15px;
+    border: 2px solid #7ed957;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: box-shadow 0.3s ease;
+    outline: none;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.feedback input:focus,
+.feedback textarea:focus {
+    box-shadow: 0 0 10px #7ed957;
+}
+
+.contact textarea,
+.feedback textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact button,
+.feedback button {
+    background: #2a9134;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover,
+.feedback button:hover {
+    background: #7ed957;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #7ed957, 0 0 25px #7ed957;
+}
+
+/* Feedback List Styles */
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.feedback-entry {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-entry h3 {
+    color: #2a9134;
+    text-shadow: 1px 1px 5px #7ed957;
+    margin-bottom: 5px;
+}
+
+.feedback-entry p {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a9134;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design: Media Queries */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .why-solar, .uses-solar, .contact, .feedback {
+        padding: 30px;
+        max-width: 600px;
+    }
+
+    .why-solar h2, .uses-solar h2, .contact h1, .feedback h1 {
+        font-size: 2em;
+    }
+
+    .why-solar p, .uses-solar p, .contact p, .feedback p {
+        font-size: 1.1em;
+    }
+
+    .solar-image {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-solar, .uses-solar, .contact, .feedback {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .why-solar h2, .uses-solar h2, .contact h1, .feedback h1 {
+        font-size: 1.8em;
+    }
+
+    .why-solar p, .uses-solar p, .contact p, .feedback p {
+        font-size: 1em;
+    }
+
+    .why-solar-images, .uses-solar-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solar-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .why-solar, .uses-solar, .contact, .feedback {
+        padding: 15px;
+    }
+
+    .why-solar h2, .uses-solar h2, .contact h1, .feedback h1 {
+        font-size: 1.5em;
+    }
+
+    .why-solar p, .uses-solar p, .contact p, .feedback p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #f0fff0;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(145deg, #e0f7e7, #b4e6c5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #7ed957;
+    color: #fff;
+    box-shadow: 0 0 10px #7ed957, 0 0 20px #7ed957, 0 0 30px #7ed957;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none; /* Hide nav by default */
+        width: 100%;
+        background: #e0f7e7;
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        left: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
